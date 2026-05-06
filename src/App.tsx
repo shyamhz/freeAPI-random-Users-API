@@ -28,7 +28,7 @@ const App = () => {
         if (data["statusCode"] !== 200) {
           throw new Error("User not fetched");
         }
-        const filteredUserObjectArray = data["data"]["data"].map((userObj) => {
+        const filteredUserObjectArray = data["data"]["data"].map((userObj: any) => {
           return {
             id: userObj["id"],
             name: userObj["name"],

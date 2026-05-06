@@ -74,7 +74,7 @@ const AppBody = ({ userData }: AppBodyProps) => {
                   <div className="flex flex-col gap-2 sm:gap-2 mt-4">
                     <div className="flex items-center gap-2 text-xs">
                       <Badge className="">
-                        <CalendarIcon size="0.500rem" />
+                        <CalendarIcon size={16} />
                         <strong>Active Since</strong>
                       </Badge>
                       <strong>
@@ -85,21 +85,21 @@ const AppBody = ({ userData }: AppBodyProps) => {
                       </strong>
                     </div>
                     <div className="mt-2 flex gap-2">
-                      <MapPinIcon size="1.250rem" />
+                      <MapPinIcon size={20} />
                       <Badge className="flex">
                         <strong>Country</strong>
                       </Badge>
                       <p>{user.address.country}</p>
                     </div>
                     <div className="mt-2 flex gap-2">
-                      <MapIcon size="1.250rem" />
+                      <MapIcon size={20} />
                       <Badge className="flex">
                         <strong>City</strong>
                       </Badge>
                       <p>{user.address.city}</p>
                     </div>
                     <div className="mt-2 flex gap-2 mb-2">
-                      <SignPostIcon size="1.250rem" />
+                      <SignPostIcon size={20} />
                       <Badge className="flex">
                         <strong>Pincode</strong>
                       </Badge>
@@ -111,13 +111,13 @@ const AppBody = ({ userData }: AppBodyProps) => {
                   <CardDescription className="flex flex-col gap-4 mt-4">
                     <div className="flex gap-2">
                       <Badge>
-                        <MailIcon size="0.500rem" />
+                        <MailIcon size={16} />
                       </Badge>
                       <strong>{user.email}</strong>
                     </div>
                     <div className="flex items-center gap-2 text-xs">
                       <Badge className="">
-                        <CakeIcon size="0.500rem" className="mb-1" />
+                        <CakeIcon size={16} className="mb-1" />
                         <strong>DOB</strong>
                       </Badge>
                       <strong>

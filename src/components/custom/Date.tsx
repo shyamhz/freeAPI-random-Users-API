@@ -1,4 +1,4 @@
-const DateComponent = ({ date, className }) => {
+const DateComponent = ({ date, className }: { date: string; className: string }) => {
   return (
     <strong className={className}>
       {new Date(date).toLocaleDateString("en-IN", {
