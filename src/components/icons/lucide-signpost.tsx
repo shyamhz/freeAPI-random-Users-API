@@ -1,0 +1,33 @@
+import * as React from "react";
+
+const SignpostIcon = ({
+  size = 24,
+  color = "currentColor",
+  strokeWidth = 2,
+  className,
+  ...props
+}: React.SVGProps<SVGSVGElement> & {
+  size?: number;
+  color?: string;
+  strokeWidth?: number;
+}) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke={color}
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      {...props}
+    >
+      <path d="M12 13v8m0-18v3m6 0a2 2 0 0 1 1.387.56l2.307 2.22a1 1 0 0 1 0 1.44l-2.307 2.22A2 2 0 0 1 18 13H6a2 2 0 0 1-1.387-.56l-2.306-2.22a1 1 0 0 1 0-1.44l2.306-2.22A2 2 0 0 1 6 6z" />
+    </svg>
+  );
+};
+
+export default SignpostIcon;
