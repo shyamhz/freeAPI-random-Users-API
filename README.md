@@ -26,7 +26,7 @@ A modern web application that fetches and displays random users from the FreeAPI
 
 ### Prerequisites
 - Node.js (v16 or higher)
-- Bun (latest version) - [Install Bun](https://bun.sh)
+- Bun (latest version) - [Install Bun](https://bun.sh) (you can use npm as well)
 
 ### Installation
 
@@ -76,13 +76,6 @@ The app fetches random users from:
 https://api.freeapi.app/api/v1/public/randomusers
 ```
 
-### Response Structure
-- **User Information:** Name, email, phone, location
-- **Avatar:** Profile picture (thumbnail)
-- **Date of Birth:** Age and formatted date
-- **Registration:** Account creation date
-- **Location Details:** City, country, postcode, coordinates
-
 ## Features Usage
 
 ### Theme Toggle
@@ -91,32 +84,4 @@ Click the Sun/Moon icon in the header to switch between light and dark modes. Th
 ### User Information Tabs
 - **General Tab:** Location, country, city, and postal code
 - **Personal Tab:** Email and date of birth
-
-### Responsive Layout
-- Mobile: Full width, single column layout
-- Tablet & Desktop: 70% centered width with flexible card grid
-
-## Styling & Theming
-
-The project uses shadcn's custom color palette defined in `index.css`:
-- Primary colors adapt to light/dark mode
-- All colors follow OKLCH color space for better perceptual uniformity
-- CSS variables enable easy theme customization
-
-## Recent Updates
-
-- ✅ Fixed syntax errors in component mapping
-- ✅ Separated UI logic into `AppBody` component
-- ✅ Added header bar with "UserPool" branding
-- ✅ Implemented functional theme toggle with dark mode support
-- ✅ Optimized card sizing and spacing
-- ✅ Improved dark mode styling for tabs and form elements
-
-## Contributing
-
-Feel free to fork and submit pull requests with improvements!
-
-## License
-
-MIT
 
