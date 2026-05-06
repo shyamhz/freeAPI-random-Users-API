@@ -6,7 +6,7 @@ import { Moon, Sun } from "lucide-react";
 const App = () => {
   const [userData, setUserData] = useState([]);
   const [isDark, setIsDark] = useState(
-    document.documentElement.classList.contains("dark")
+    document.documentElement.classList.contains("dark"),
   );
 
   const toggleTheme = () => {
@@ -18,8 +18,7 @@ const App = () => {
   useEffect(() => {
     const controller = new AbortController();
 
-    const url =
-      "https://api.freeapi.app/api/v1/public/randomusers";
+    const url = "https://api.freeapi.app/api/v1/public/randomusers";
     const options = { method: "GET", headers: { accept: "application/json" } };
     const fetchUsers = async () => {
       try {
@@ -60,15 +59,10 @@ const App = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {/* Header Bar */}
       <div className="border-b border-border sticky top-0 z-50 bg-background">
         <div className="flex justify-between items-center px-6 py-4">
           <h1 className="text-2xl font-bold">UserPool</h1>
-          <Button
-            variant="outline"
-            size="icon"
-            onClick={toggleTheme}
-          >
+          <Button variant="outline" size="icon" onClick={toggleTheme}>
             {isDark ? (
               <Sun className="h-5 w-5" />
             ) : (
@@ -78,7 +72,6 @@ const App = () => {
         </div>
       </div>
 
-      {/* Content */}
       <div className="flex justify-center py-8">
         <div className="w-full md:w-[70%]">
           <div className="flex flex-col md:flex-row flex-wrap gap-4">
