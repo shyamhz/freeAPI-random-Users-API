@@ -19,7 +19,7 @@ const App = () => {
     const controller = new AbortController();
 
     const url =
-      "https://api.freeapi.app/api/v1/public/randomusers?page=1&limit=10";
+      "https://api.freeapi.app/api/v1/public/randomusers";
     const options = { method: "GET", headers: { accept: "application/json" } };
     const fetchUsers = async () => {
       try {
